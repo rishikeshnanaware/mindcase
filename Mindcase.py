@@ -17,13 +17,13 @@ def query_pdf_with_llm(pdf_text, question):
     return result["answer"]
 
 if __name__ == "__main__":
-    pdf_file_path = "file.pdf"
+    pdf_file_path = "Cinema.pdf"
     query = input()
 
     # Extract text from the PDF
     pdf_text = extract_text_from_pdf(pdf_file_path)
     answer = query_pdf_with_llm(pdf_text, query)
-    print(f"Answer: {answer}")
+    print(f"Response: {answer}")
 
 
 
